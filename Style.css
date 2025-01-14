@@ -1,0 +1,187 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: ghostwhite;
+    color:white;
+    
+}
+
+nav
+{
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    border: 2px solid rgb(190, 184, 184);
+    box-shadow: 1px 1px 5px lightgrey;
+    margin:10px 5px;
+    padding: 10px;
+
+}
+
+#div1 img
+{
+    height: 5rem;
+    margin-left:-25px;
+}
+
+#div2 input
+{
+    height: 2.5rem;
+    width: 20rem;
+    padding-left: 0.5rem;
+    /* border: 2px solid grey; */
+    border: none;
+    border-radius:20px;
+    font-size: 20px;
+    background-color: rgb(233, 233, 241);
+}
+
+#div3 ul
+{
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  list-style: none;
+  margin-right: 20px;
+  font-size: 17px;
+  font-family: sans-serif;
+}
+
+#div3 ul li
+{
+    transition: 0.3s;
+
+    
+    animation: rotate var(--t) linear 1;
+}
+
+#div3 ul li:hover
+{
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgb(35, 182, 35);
+    border-radius: 20px;
+    color: white;
+    /* transform: scale(1.1); */
+}
+
+#content
+{
+    background-color:ghostwhite;
+    color: black;
+    border-radius: 10px;
+    height: 35rem;
+    width: 90rem;
+    margin: 10px auto;
+    box-shadow: 2px 2px 5px rgb(242, 239, 239);
+    font-family: sans-serif;
+
+    display: flex;
+    
+
+}
+
+#box
+{
+    padding-top: 200px;
+    padding-left: 20px;
+}
+
+#box span
+{
+    
+    color: var(--c);
+    
+}
+
+#box p
+{
+    width: 40rem;
+}
+
+#box button
+{
+    height: 2.4rem;
+    width: 10rem;
+    font-size: 17px;
+    border-style: none;
+    border-radius: 20px;
+    background-color: rgb(67, 175, 67);
+    color: rgb(243, 236, 236);
+    transition: 0.3s;
+}
+
+
+#box button:hover
+{
+    cursor: pointer;
+    transform: scale(1.09);
+}
+
+#box1
+{
+    
+    height: 100%;
+    width: 50%;
+    padding-top: 80px;
+    background-image: url(https://www.pngmart.com/files/23/Green-Circle-PNG.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30rem;
+}
+
+#box1 img
+{
+    height: 30rem;
+    position: absolute;
+    right: 19rem;
+    transition: 0.3s;
+}
+
+#box1 img:hover
+{
+    cursor: pointer;
+    transform: scale(0.95) rotate(5deg);
+    
+
+}
+
+@media screen and (max-width:768px)
+{
+    nav
+    {
+        flex-direction: column;
+        height: fit-content;
+        row-gap: 30px;
+    }
+}
+
+@media screen and (max-width:1200px)
+{
+    #content
+    {
+        flex-direction: column;
+        height: fit-content;
+        row-gap: 30px;
+    }
+}
+
+@keyframes rotate
+{
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0);
+        
+    }
+}
